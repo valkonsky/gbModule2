@@ -1,12 +1,12 @@
 package ru.gb.savilin;
 
-public interface Creaturable {
+public interface Participant {
 
     void run();
     void jump();
     int getMaxJump();
     int getMaxRun();
-    boolean getIsFail();
-    void setIsFail(boolean fail);
+    boolean getFail();
+    void setFail(boolean fail);
 
 }

@@ -1,23 +1,15 @@
 package ru.gb.savilin;
 
-public class Human implements Creaturable{
+public class Human implements Participant {
 
-    private final int MAX_RUN;
-    private final int MAX_JUMP;
+    private final int maxRun;
+    private final int maxJump;
     private boolean isFail;
 
-    Human(int MAX_JUMP, int MAX_RUN){
-        this.MAX_JUMP = MAX_JUMP;
-        this.MAX_RUN = MAX_RUN;
+    Human(int maxJump, int maxRun){
+        this.maxJump = maxJump;
+        this.maxRun = maxRun;
         isFail = false;
-    }
-
-    public int getMAX_JUMP(){
-        return MAX_JUMP;
-    }
-
-    public int getMAX_RUN(){
-        return MAX_RUN;
     }
 
     @Override
@@ -32,21 +24,21 @@ public class Human implements Creaturable{
 
     @Override
     public int getMaxJump() {
-        return MAX_JUMP;
+        return maxJump;
     }
 
     @Override
     public int getMaxRun() {
-        return MAX_RUN;
+        return maxRun;
     }
 
     @Override
-    public boolean getIsFail() {
+    public boolean getFail() {
         return isFail;
     }
 
     @Override
-    public void setIsFail(boolean fail) {
+    public void setFail(boolean fail) {
         this.isFail = fail;
     }
 }

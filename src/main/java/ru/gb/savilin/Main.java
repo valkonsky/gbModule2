@@ -4,13 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Creaturable[] team = new Creaturable[]{
+        Participant[] team = new Participant[]{
                 new Cat(2,5),
                 new Human(1,30),
                 new Robot(0,15)
         };
 
-        Letable[] obstacleСourse = new Letable[]{
+        Obstacle[] obstacleСourse = new Obstacle[]{
                 new Wall(1),
                 new TreadMill(1)
         };

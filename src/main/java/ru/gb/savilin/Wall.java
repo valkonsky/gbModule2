@@ -1,6 +1,6 @@
 package ru.gb.savilin;
 
-public class Wall implements Letable{
+public class Wall implements Obstacle {
 
     private int height;
 
@@ -9,14 +9,14 @@ public class Wall implements Letable{
     }
 
     @Override
-    public void overcome(Creaturable creaturable) {
-        if ((creaturable.getMaxJump()>= height)&&(creaturable.getIsFail()==false)){
+    public void overcome(Participant participant) {
+        if ((participant.getMaxJump()>= height)&&(participant.getFail()==false)){
             System.out.println("Wall completed ");
-        }else if((creaturable.getMaxJump()>= height)&&(creaturable.getIsFail()==true)){
+        }else if((participant.getMaxJump()>= height)&&(participant.getFail()==true)){
                 System.out.println("disqualified");
         }else{
             System.out.println("did not cross the TreadMill:");
-            creaturable.setIsFail(true);
+            participant.setFail(true);
         }
     }
 }
