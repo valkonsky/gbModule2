@@ -8,8 +8,10 @@ public class Main {
                                                             "elephant","gepard","fish",
                                                             "fish","cat","dog","dog"));
 
-       //System.out.println(Dictionary.getUniqueValues(words).keySet());
-       //System.out.println(Dictionary.getCountOfValues(words));
+        Dictionary dictionary = new Dictionary(words);
+
+        System.out.println(dictionary.getUniqueValues());
+       System.out.println(dictionary.getCountOfValues());
 
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("olga", "89233443344");
