@@ -1,6 +1,9 @@
 public class Main {
   
   public static void main(String[] args){
-  System.out.println("test");
+
+    ArrayManager arrayManager = new ArrayManager();
+    arrayManager.fillArray();
+    arrayManager.synchFillArray();
   }
 }
